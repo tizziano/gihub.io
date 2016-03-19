@@ -4,19 +4,22 @@ A questo punto devi dire chi sei e cosa fai, quali obiettivi ti proponi, ecc.ecc
 
 == Prove markup asciidoc
 
-Se non è sufficiente pio proseguire qui, per il momento puoi 'provare' la formattazione *asciidoc*, se va bene.
+Se non è sufficiente puoi proseguire qui, per il momento puoi _provare_ la formattazione *asciidoc*, se va bene.
 
 Un paragrafo e tante belle parole. Un paragrafo e tante belle parole. Un paragrafo e tante belle parole. 
+
+
        Un paragrafo e tante belle parole. Un paragrafo e tante belle parole. 
        Un paragrafo e tante belle parole. Un paragrafo e tante belle parole. 
+
        
 metti qui un'illustrazione
 
-Inserimento ilistrazioni: millefori:millefori.png[]
+Inserimento illustrazioni: (millefori:images/millefori.png[])
 Prosegue il discorso con altri esempi:
 
 .millefori block image
-image::millefori.png[Illustrazione millefori]
+image::images/millefori.png[Illustrazione millefori]
 
 ecc. ecc.
 
