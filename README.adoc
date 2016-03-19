@@ -12,3 +12,12 @@ Un paragrafo e tante belle parole. Un paragrafo e tante belle parole. Un paragra
        
 metti qui un'illustrazione
 
+Inserimento ilistrazioni: millefori:millefori.png[]
+Prosegue il discorso con altri esempi:
+
+.millefori block image
+image::millefori.png[Illustrazione millefori]
+
+ecc. ecc.
+
+
