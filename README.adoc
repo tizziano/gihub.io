@@ -29,3 +29,19 @@ asciimath:[`x/x={(1,if x!=0),(text{undefined},if x=0):}`]
 e adesso prova questa:
 
 latexmath:[$\sum_{n=1}^\infty \frac{1}{2^n}$]
+
+e questa:
+
+Red [red]+++`sum_(i=1)\^n i=(n(n+1))/2`$+++ AsciiMathML formula
+
+== codice???
+
+[source,java]
+--
+public String welcome(final String name) {
+    if (name == null || name.isEmpty()) {
+        throw new IllegalArgumentException("name must be specified");
+    }
+    return "Hello, " + name;
+}
+--
