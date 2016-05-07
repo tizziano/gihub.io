@@ -34,7 +34,11 @@ e questa:
 
 Red [red]+++`sum_(i=1)\^n i=(n(n+1))/2`$+++ AsciiMathML formula
 
-== codice???
+e questa:
+
+\frac{n!}{k!(n-k)!}
+
+== codice java
 
 [source,java]
 --
