@@ -40,12 +40,40 @@ e questa:
 
 == codice java
 
-[source,java]
+[source,C]
 --
-public String welcome(final String name) {
-    if (name == null || name.isEmpty()) {
-        throw new IllegalArgumentException("name must be specified");
-    }
-    return "Hello, " + name;
+/*
+ * example_1-1.c
+ * 
+ * Copyright 2014 tiziano <tiziano.detogni@gmail.com>
+ * 
+ */
+#include <stdlib.h>
+#include <stdio.h>
+
+/*
+ * This is the "declaration".
+ */
+void show_message(void);       // anche questo è un commento, nessuno che lo dice???
+                               // no, dato che è un commento C++, gcc lo accetta ma è 
+                               // sconsigliato...
+
+/*
+ * This is now a "definition".
+ */
+void show_message(void){
+    printf("hello\n");
+}
+
+
+int main() {
+    int count;
+    count = 0;
+    while(count < 10) {
+        show_message();
+        count = count + 1;
+    };
+
+    exit(0);
 }
 --
