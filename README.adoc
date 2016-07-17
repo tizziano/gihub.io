@@ -38,7 +38,7 @@ e questa:
 
 \frac{n!}{k!(n-k)!}
 
-== codice java
+== Il codice
 
 [source,C]
 --
