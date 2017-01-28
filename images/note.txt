@@ -1,1 +1,17 @@
 
+Come ho fatto a collegarmi a questo deposito in remoto:
+
+crea nuova directory ~/lavori/geany/github
+apri un terminale nella directory
+git init
+# la directory ora è vuota, il deposito su github è  già stato creato
+# devi fornire l'indirizzo da cui scaricare quello che c'è già
+git remote add origin https://github.com/tizziano/github.io
+
+# recupera i file da github, ora li hai caricati sulla directory
+git pull origin master				# scarica le modifiche in locale
+
+git push -u origin master			# carica i file locali sul master
+git pull origin master				# scarica le modifiche in locale
+git push
+
