@@ -1,11 +1,6 @@
 
-asciidoc/note.adoc
-================
-:lang: it
-:author: Tiziano
-:toc:
-
-= ASCIIDOC
+ASCIIDOC
+========
 
 Oggi proviamo questo nuovo sistema per trasformare i miei appunti in documenti 
 decisamente più presentabili e accessibili. 
