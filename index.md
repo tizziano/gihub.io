@@ -42,5 +42,9 @@ Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
 eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, 
 eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, 
 
-E adesso le cose serie: [mastroPiano](https://tizziano.github.io/mastroPiano/)
+E adesso le cose serie: 
+
+[mastroPiano](https://tizziano.github.io/mastroPiano/)
+
+[mastroPiano wiki](https://github.com/tizziano/mastroPiano/wiki/mastroPiano-wiki)
 
