@@ -1,4 +1,20 @@
 
+= TIZZIANO.GITHUB.IO
+:lang: it
+:author: Tiziano
+v1.0, 02-feb-2017
+v1.1, 12-feb-2017
+:backend: xhtml11
+:toc2:
+:toclevels: 5
+:theme: volnitsky
+:data-uri:
+
+.Prove tecniche di comunicazione
+
+L'obiettivo  di essere in grado di esporre le proprie idee per condividerle con 
+altri.
+
 === In dettaglio
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
