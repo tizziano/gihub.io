@@ -15,7 +15,7 @@ v1.1, 12-feb-2017
 L'obiettivo  di essere in grado di esporre le proprie idee per condividerle con 
 altri.
 
-=== In dettaglio
+== In dettaglio
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
 Aenean commodo ligula eget dolor. Aenean massa. 
@@ -23,7 +23,7 @@ Cum sociis natoque penatibus et magnis dis parturient montes,
 nascetur ridiculus mus. Donec quam felis, ultricies nec, 
 pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
 
-=== due
+== due
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
 Aenean commodo ligula eget dolor. Aenean massa. 
@@ -31,7 +31,7 @@ Cum sociis natoque penatibus et magnis dis parturient montes,
 nascetur ridiculus mus. Donec quam felis, ultricies nec, 
 pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
 
-=== tre
+== tre
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
 Aenean commodo ligula eget dolor. Aenean massa. 
