@@ -38,8 +38,7 @@ Aenean commodo ligula eget dolor. Aenean massa.
 Cum sociis natoque penatibus et magnis dis parturient montes, 
 nascetur ridiculus mus. Donec quam felis, ultricies nec, 
 
-E adesso le cose serie: 
+E adesso le cose serie: link:https://tizziano.github.io/mastroPiano[mastroPiano]
 
-[mastroPiano](https://tizziano.github.io/mastroPiano/)
 
 
