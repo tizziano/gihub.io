@@ -6,24 +6,24 @@ v1.0, 05-feb-2017
 
 Questi sono i file sorgenti del sito statico https://tizziano.github.io. 
 
-Da un po' di tempo mi interesso di informatica ed elettronica. Uno dei miei 
-problemi è sempre stato quello di non essere in grado di spiegare in modo adeguato 
-agli altri quello che faccio, così da poter trovare persone con le quali 
-condividere questi miei interessi. 
+I miei interessi prevalenti sono l'informatica ed l'elettronica. Uno dei miei 
+problemi è sempre stato quello di documentare, lasciare una traccia di quello 
+che faccio. Un po' per me, un po' per poter condividere queste cose con gli 
+altri. 
 
-Se poi tali persone vivono in località lontane da dove abito, questa mia 
-ambizione si riduce ad un semplice desiderio irrealizzabile. 
+Tentativi ne fatti molti, ma senza ottenere risultati apprezzabili, o almeno 
+che mi incoraggiassero a continuare. 
 
-Questo è in sintesi il motivo principale di questa finestra che ho aperto, non 
-sul mondo, ma nel mio mondo così da rendere più realizzabile la mia ricerca. 
+Questo è in sintesi un altro tentativo, alla luce delle esperienze fatte in 
+passato e nella speranza che il sistema possa dare i suoi frutti. 
 
 == Gli strumenti
 
 Se non è sufficiente puoi proseguire qui, per il momento puoi _provare_ la 
 formattazione *asciidoc*, se va bene. 
 
-Un paragrafo e tante belle parole. Un paragrafo e tante belle parole. Un paragrafo e tante belle parole. 
-
+Un paragrafo e tante belle parole. Un paragrafo e tante belle parole. Un 
+paragrafo e tante belle parole. 
 
        Un paragrafo e tante belle parole. Un paragrafo e tante belle parole. 
        Un paragrafo e tante belle parole. Un paragrafo e tante belle parole. 
