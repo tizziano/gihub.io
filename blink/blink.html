@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
 <meta name="generator" content="AsciiDoc 8.6.9" />
-<title>Tizziano</title>
+<title>Blink</title>
 <style type="text/css">
 
 /* Shared CSS for AsciiDoc xhtml11 and html5 backends */
@@ -722,6 +722,40 @@ body.manpage div.sectionbody {
 }
 
 
+@media screen {
+  body {
+    max-width: 50em; /* approximately 80 characters wide */
+    margin-left: 16em;
+  }
+
+  #toc {
+    position: fixed;
+    top: 3em;
+    left: 0;
+    bottom: 0;
+    width: 13em;
+    padding: 0.5em;
+    padding-bottom: 1.5em;
+    margin: 0;
+    overflow: auto;
+    border-right: 3px solid #f8f8f8;
+    background-color: white;
+  }
+
+  #toc .toclevel1 {
+    margin-top: 0.5em;
+  }
+
+  #toc .toclevel2 {
+    margin-top: 0.25em;
+    display: list-item;
+    color: #aaaaaa;
+  }
+
+  #toctitle {
+    margin-top: 0.5em;
+  }
+}
 </style>
 <script type="text/javascript">
 /*<![CDATA[*/
@@ -914,65 +948,169 @@ install: function(toclevels) {
 }
 
 }
-asciidoc.install();
+asciidoc.install(5);
 /*]]>*/
 </script>
 </head>
 <body class="article">
 <div id="header">
-<h1>Tizziano</h1>
+<h1>Blink</h1>
 <span id="author">Tiziano</span><br />
-<span id="revnumber">version 1.2,</span>
-<span id="revdate">03-mar-2017</span>
+<div id="toc">
+  <div id="toctitle">Sommario</div>
+  <noscript><p><b>JavaScript must be enabled in your browser to display the table of contents.</b></p></noscript>
+</div>
 </div>
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
-<div class="sidebarblock" id="navbar">
+<div class="sidebarblock navbar">
 <div class="content">
 <svg aria-hidden="true" class="octicon octicon-mark-github" style="float:left;padding-right:10px;" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" fill-rule="evenodd"></path></svg>
-<div class="paragraph"><p><a href="https://github.com/tizziano">tizziano su GitHub</a>
-
-<a href="mastroPiano">mastroPiano</a>
-<a href="blink/blink.html">Blink&#8230;</a></p></div>
+<div class="paragraph"><p><a href="../index.html">Tizziano</a></p></div>
 </div></div>
-<div class="paragraph"><div class="title">Prove tecniche di comunicazione</div><p>L&#8217;obiettivo è di essere in grado di esporre le cose che faccio per condividerle
-con altri. Per questo, aprire semplicemente un archivio GitHub non basta. Serve
-uno spazio web per esporre e illustrare quanto si è fatto, altrimenti non c'è
-comunicazione.</p></div>
-<div class="paragraph"><p>Al momento sono impegnato in un&#8217;impresa piuttosto difficile e noiosa, per
-documentare il progetto <a href="https://tizziano.github.io/mastroPiano">mastroPiano</a>.
-Altre cose saranno disponibili col tempo, come ad esempio la pagina Blink.</p></div>
-<div class="paragraph"><p>Ma questa è un&#8217;altra storia, che parlerà di come sia possibile ottenere una
-pagina HTML da un semplice file di testo e come utilizzare certi strumenti
-software per semplificare, anziché complicare la propria vita.</p></div>
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<div class="title">Nota</div>
+</td>
+<td class="content">Questa pagina è attualmente in fase di costruzione. Si tratta di un testo
+di prova che ha l&#8217;obiettivo di esemplificare alcuni aspetti per la
+redazione di un articolo tecnico con minimo sforzo e massimo (possibile)
+risultato.</td>
+</tr></table>
+</div>
+<div class="paragraph"><p>Questa pagina illustra come far lampeggiare un led con la scheda <span class="footnote"><br />[
+Mettere sempre prima del nome <em>Arduino</em> se si tratta della scheda, dell&#8217;IDE,
+della libreria, della comunità, del Primo Re d&#8217;Italia, del vicino di casa, o di
+qualsiasi altra cosa possa essere chiamata Arduino). Una questione di stile.]<br /></span>
+Arduino.</p></div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_comunicare">Comunicare</h2>
+<h2 id="_introduzione">Introduzione</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>Comunicare significa condividere la conoscenza, quindi, se comunico, condivido.
-Una parola! Ma come? Dicono che un&#8217;immagine vale mille parole, ma senza una
-breve spiegazione l&#8217;immagine mantiene la sua efficacia?</p></div>
+<div class="paragraph"><p>In questo esempio, vengono utilizzati un led e una resistenza limitatrice di
+corrente collegati come illustrato nel seguente schema elettrico. Uno dei pin
+digitali della scheda Arduino, configurato come uscita viene collegato alla
+resistenza limitatrice, in configurazione <em>current source</em> <span class="footnote"><br />[(<em>note a
+piedipagina in una pagina HTML, possono evere un senso?</em>) Sorgente di corrente,
+la corrente esce dal pin. Contrapposto alla configurazione <em>Current sink</em>,
+Assorbimento di corrente, dove la corrente entra nel pin]<br /></span>.</p></div>
+<div class="paragraph"><p><span class="image">
+<img src="files/blink-crop.png" alt="Lo schema" height="300" />
+</span></p></div>
+<div class="paragraph"><p>Scarica: <a href="files/blink.png"><strong>immagine</strong></a>  <a href="files/blink.pdf"><strong>pdf</strong></a></p></div>
+<div class="paragraph"><p>La resistenza di 470 Ohm svolge una doppia funzione. Limitare la corrente
+erogata dal processore e conseguentemente ridurre la corrente che accende il
+led. Essendo la tensione in uscita di 5 Volt, l&#8217;assorbimento in corrente è pari
+a 0,011 Ampere (11 mA).</p></div>
+<div class="listingblock">
+<div class="content">
+<pre><code>    Se si volesse avere un margine di sicurezza maggiore si potrebbe usare una
+    resistenza da 1K Ohm, ottenendo un assorbimento inferiore, pari a 5 mA. Con
+    una conseguente riduzione di luminosità del led.</code></pre>
+</div></div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_linguaggio">Linguaggio</h2>
+<h2 id="_il_software">Il software</h2>
 <div class="sectionbody">
+<div class="admonitionblock">
+<table><tr>
+<td class="icon">
+<div class="title">Nota</div>
+</td>
+<td class="content">Ci sono due modi per illustrare il software. Sbattere sulla pagina un
+listato chilometrico e pretendere che qualcuno lo legga. Oppure costruire
+passo passo il listato da zero (vedi dean camera). Il secondo approccio mi
+sembrerebbe migliore, ma molto più faticoso.</td>
+</tr></table>
+</div>
+<div class="paragraph"><p>Sulla pagina <a href="http://arduino.cc/en/Tutorial/Blink">http://arduino.cc/en/Tutorial/Blink</a>, molto simile nella sostanza a
+questa, è possibile vedere un esempio molto semplice che mostra come
+lampeggiare il led. Tuttavia esistono molti modi differenti per ottenere lo
+stesso risultato. Come al solito, in un esempio come questo, il software è
+molto semplice. Lo si può scaricare a questo indirizzo
+<a href="files/blink.ino"><strong>blink.ino</strong></a>:</p></div>
+<div class="listingblock">
+<div class="content"><!-- Generator: GNU source-highlight 3.1.8
+by Lorenzo Bettini
+http://www.lorenzobettini.it
+http://www.gnu.org/software/src-highlite -->
+<pre><tt><span style="font-style: italic"><span style="color: #9A1900">/*</span></span>
+<span style="font-style: italic"><span style="color: #9A1900">  Blink</span></span>
+<span style="font-style: italic"><span style="color: #9A1900">  Turns on an LED on for one second, then off for one second, repeatedly.</span></span>
+<span style="font-style: italic"><span style="color: #9A1900">*/</span></span>
+
+<span style="font-weight: bold"><span style="color: #000080">#define</span></span> pinLed <span style="color: #993399">13</span>
+<span style="font-weight: bold"><span style="color: #000080">#define</span></span> DEBUGSERIALno
+
+<span style="color: #009900">void</span> <span style="font-weight: bold"><span style="color: #000000">blinkled</span></span><span style="color: #990000">(</span><span style="color: #009900">int</span> pin<span style="color: #990000">,</span> <span style="color: #009900">unsigned</span> <span style="color: #009900">long</span> blinkdelay<span style="color: #990000">)</span> <span style="color: #FF0000">{</span>
+  <span style="font-weight: bold"><span style="color: #0000FF">static</span></span> <span style="color: #009900">unsigned</span> <span style="color: #009900">long</span> time<span style="color: #990000">=</span><span style="color: #993399">0</span><span style="color: #990000">;</span>
+  <span style="font-weight: bold"><span style="color: #0000FF">static</span></span> <span style="color: #009900">int</span> state <span style="color: #990000">=</span> HIGH<span style="color: #990000">;</span>
+
+  <span style="font-weight: bold"><span style="color: #0000FF">if</span></span> <span style="color: #990000">(</span> <span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #000000">millis</span></span><span style="color: #990000">()-</span>time<span style="color: #990000">)</span> <span style="color: #990000">&gt;</span> blinkdelay <span style="color: #990000">)</span> <span style="color: #FF0000">{</span>
+        time<span style="color: #990000">=</span><span style="font-weight: bold"><span style="color: #000000">millis</span></span><span style="color: #990000">();</span>
+                <span style="font-style: italic"><span style="color: #9A1900">//  condition ? thenstatement: elsestatement;</span></span>
+        state <span style="color: #990000">=</span> <span style="color: #990000">(</span>state <span style="color: #990000">==</span> LOW<span style="color: #990000">)</span> <span style="color: #990000">?</span> HIGH<span style="color: #990000">:</span> LOW<span style="color: #990000">;</span>
+        <span style="font-weight: bold"><span style="color: #000000">digitalWrite</span></span><span style="color: #990000">(</span>pin<span style="color: #990000">,</span> state<span style="color: #990000">);</span>   <span style="font-style: italic"><span style="color: #9A1900">// sets the LED on</span></span>
+
+<span style="font-weight: bold"><span style="color: #000080">        #ifdef</span></span> DEBUGSERIAL
+          <span style="font-weight: bold"><span style="color: #0000FF">if</span></span> <span style="color: #990000">(</span>state <span style="color: #990000">==</span> LOW<span style="color: #990000">)</span> Serial<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">println</span></span><span style="color: #990000">(</span><span style="color: #FF0000">"blink"</span><span style="color: #990000">);</span>
+<span style="font-weight: bold"><span style="color: #000080">        #endif</span></span>
+  <span style="color: #FF0000">}</span><span style="color: #990000">;</span>
+  <span style="font-weight: bold"><span style="color: #0000FF">return</span></span><span style="color: #990000">;</span>
+<span style="color: #FF0000">}</span>
+
+<span style="color: #009900">void</span> <span style="font-weight: bold"><span style="color: #000000">setup</span></span><span style="color: #990000">()</span> <span style="color: #FF0000">{</span>
+  <span style="font-style: italic"><span style="color: #9A1900">// Pin 13 has an LED connected on most Arduino boards:</span></span>
+  <span style="font-style: italic"><span style="color: #9A1900">// initialize digital pin 13 as an output.</span></span>
+  <span style="font-weight: bold"><span style="color: #000000">pinMode</span></span><span style="color: #990000">(</span>pinLed<span style="color: #990000">,</span> OUTPUT<span style="color: #990000">);</span>
+
+<span style="font-weight: bold"><span style="color: #000080">  #ifdef</span></span> DEBUGSERIAL
+    <span style="font-style: italic"><span style="color: #9A1900">// 300, 600, 1200, 2400, 4800, 9600, 19200, 38400, 57600, or 115200</span></span>
+    Serial<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">begin</span></span><span style="color: #990000">(</span><span style="color: #993399">57600</span><span style="color: #990000">);</span>
+    Serial<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">println</span></span><span style="color: #990000">(</span><span style="color: #FF0000">"blink startup"</span><span style="color: #990000">);</span>
+<span style="font-weight: bold"><span style="color: #000080">  #endif</span></span>
+<span style="color: #FF0000">}</span>
+
+<span style="color: #009900">void</span> <span style="font-weight: bold"><span style="color: #000000">loop</span></span><span style="color: #990000">()</span> <span style="color: #FF0000">{</span>
+    <span style="font-weight: bold"><span style="color: #000000">blinkled</span></span><span style="color: #990000">(</span>pinLed<span style="color: #990000">,</span> <span style="color: #993399">1000</span><span style="color: #990000">);</span>
+<span style="color: #FF0000">}</span></tt></pre></div></div>
+<div class="dlist"><dl>
+<dt class="hdlist1">
+todo
+</dt>
+<dd>
+<p>
+    spiega pedanticamente il software.
+</p>
+</dd>
+</dl></div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_spazio_web_statico_o_dinamico">Spazio web statico o dinamico</h2>
+<h2 id="_riepilogo">Riepilogo</h2>
 <div class="sectionbody">
+<div class="dlist"><dl>
+<dt class="hdlist1">
+todo
+</dt>
+<dd>
+<p>
+    adesso spiega cosa si è fatto, i risultati ottenuti e i possibili sviluppi
+</p>
+</dd>
+</dl></div>
 </div>
 </div>
 </div>
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Version 1.2<br />
 Last updated
- 2017-03-08 21:56:15 CET
+ 2017-03-08 20:13:30 CET
 </div>
 </div>
 </body>

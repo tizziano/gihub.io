@@ -1,13 +1,13 @@
 
-= Pagina Principale (tizziano.github.io)
+= Tizziano
 :lang: it
 :author: Tiziano
 v1.1, 12-feb-2017
 v1.2, 03-mar-2017
 :backend: xhtml11
-:toc2:
+//:toc2:
 :toclevels: 5
-:stylesdir: $HOME/.asciidoc/stylesheets
+:stylesdir: $HOME/.asciidoc/themes/tiz
 :theme: tiz
 //:theme: volnitsky
 :data-uri:
@@ -15,46 +15,43 @@ v1.2, 03-mar-2017
 //
 //  barra di navigazione
 //
-[role="navbar"]
+[[navbar]]
 ********
 // posizione svg
 +++++
 <svg aria-hidden="true" class="octicon octicon-mark-github" style="float:left;padding-right:10px;" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" fill-rule="evenodd"></path></svg>
 +++++
 link:https://github.com/tizziano[tizziano su GitHub]
-//link:https://github.com/tizziano/mastropiano[mastropiano]
-link:https://tizziano.github.io/mastroPiano[mastroPiano]
+//link:https://tizziano.github.io/mastroPiano[mastroPiano]
+link:mastroPiano[mastroPiano]
+link:blink/blink.html[Blink...]
 ********
 
 .Prove tecniche di comunicazione
 
-L'obiettivo è di essere in grado di esporre le proprie idee per condividerle 
-con altri.
+L'obiettivo è di essere in grado di esporre le cose che faccio per condividerle 
+con altri. Per questo, aprire semplicemente un archivio GitHub non basta. Serve 
+uno spazio web per esporre e illustrare quanto si è fatto, altrimenti non c'è 
+comunicazione. 
 
-== In dettaglio
+Al momento sono impegnato in un'impresa piuttosto difficile e noiosa, per 
+documentare il progetto https://tizziano.github.io/mastroPiano[mastroPiano]. 
+Altre cose saranno disponibili col tempo, come ad esempio la pagina Blink. 
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-Aenean commodo ligula eget dolor. Aenean massa. 
-Cum sociis natoque penatibus et magnis dis parturient montes, 
-nascetur ridiculus mus. Donec quam felis, ultricies nec, 
-pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+Ma questa è un'altra storia, che parlerà di come sia possibile ottenere una 
+pagina HTML da un semplice file di testo e come utilizzare certi strumenti 
+software per semplificare, anziché complicare la propria vita.
 
-== due
+== Comunicare
 
-Lorem ipsum *dolor* sit amet, consectetuer adipiscing elit. 
-Aenean commodo ligula eget dolor. Aenean massa. 
-Cum sociis natoque penatibus et magnis dis parturient montes, 
-nascetur ridiculus mus. Donec quam felis, ultricies nec, 
-pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+Comunicare significa condividere la conoscenza, quindi, se comunico, condivido. 
+Una parola! Ma come? Dicono che un'immagine vale mille parole, ma senza una 
+breve spiegazione l'immagine mantiene la sua efficacia? 
 
-== tre
+== Linguaggio
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-Aenean commodo ligula eget dolor. Aenean massa. 
-Cum sociis natoque penatibus et magnis dis parturient montes, 
-nascetur ridiculus mus. Donec quam felis, ultricies nec, 
+== Spazio web statico o dinamico
 
-E adesso le cose serie: link:https://tizziano.github.io/mastroPiano[mastroPiano]
 
 
 

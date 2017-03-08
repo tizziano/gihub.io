@@ -1,50 +1,16 @@
-= README.adoc 
+= README
 :lang: it
 :author: Tiziano
 v1.0, 05-feb-2017
-:asciimath:
 
-Questo è il file README.adoc, una breve presentazione. Per accedere alla pagina 
-principale del sito statico https://tizziano.github.io segui questo 
-collegamento. 
+Questo è l'archivio strutturato che ospita il sito statico per il profilo di 
+tizziano, su GitHub. La pagina principale del sito statico è accessibile 
+all'indirizzo: https://tizziano.github.io. 
 
-I miei interessi prevalenti sono l'informatica, l'elettronica e un pizzico di 
-meccanica. Detto in una parola, tecnologia. Qualcuno dice che sono uno 
-smanettone, altri, un 'Maker', nessuno mi ha mai definito un artigiano 
-post-moderno. Qualcuno, con mia grande lusinga, mi ha dato dell''artista', e 
-forse potrebbe essersi avvicinato più degli altri. 
+Sono presenti i file sorgenti .adoc, necessari per compilare le pagine HTML per 
+mezzo del package python Asciidoc (mancano all'appello i file di 
+configurazione che attualmente si trovano in un'altra posizione che non è 
+tracciata da git). 
 
-Uno dei problemi che non sono ancora riuscito ad affrontare in modo adeguato è 
-quello di documentare, lasciare una traccia di quello che faccio. Un po' per 
-me, un po' per poter condividere queste cose con altre persone. 
-
-Tentativi ne ho fatti, diversi. Ma senza molti risultati apprezzabili, o almeno 
-tali da incoraggiarmi a continuare. Questo è in sostanza un altro tentativo, 
-alla luce delle esperienze fatte in passato e con il proposito di poterne 
-apprezzare i frutti. 
-
-== Comunicare
-
-Comunicare significa condividere, quindi, se comunico, condivido. Una parola! 
-Dicono che un'immagine vale mille parole, ma senza una spiegazione sintetica 
-l'immagine mantiene la sua efficacia? 
-
-metti qui un'illustrazione
-
-Inserimento illustrazioni: (millefori:images/millefori.png[])
-Prosegue il discorso con altri esempi:
-
-.millefori block image
-image::images/millefori.png[Illustrazione millefori]
-
-Attualmente (sto scrivendo questo nel secondo decennio del Terzo Millennio), la 
-forma di comunicazione prevalente è formata non più da testi e immagini, bensì 
-da filmati, trasmessi sui principali mezzi di comunicazione (Internet incluso). 
-Sarà meglio? Sarà peggio? Io posso solo dire che a me non sta bene, troppo 
-veloce. Anche se, talvolta, posso tornare indietro, mi rendo sempre conto che 
-manca qualcosa: la sostanza e i dettagli. 
-
-Quindi, non è sufficiente usare lo strumento giusto per raggiungere un 
-obiettivo. Molto più spesso ci si deve mettere fatica per ottenerlo. Non so, al 
-momento sto sperimentando questo mezzo, se riuscirò anche con fatica nel mio 
-obiettivo, vorrà dire che ho fatto qualcosa di giusto, altrimenti, pazienza. 
+Non c'è nulla di particolarmente sofisticato, semplicemente uno spazio per 
+mostrare quello che sto facendo. 
