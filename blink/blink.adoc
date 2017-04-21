@@ -46,7 +46,7 @@ piedipagina in una pagina HTML, possono evere un senso?') Sorgente di corrente,
 la corrente esce dal pin. Contrapposto alla configurazione 'Current sink', 
 Assorbimento di corrente, dove la corrente entra nel pin]. 
 
-image:files/blink-crop.png["Lo schema",height=300]
+image:files/blink-crop.png["Lo schema"]
 
 Scarica: link:files/blink.png[*immagine*]  link:files/blink.pdf[*pdf*] 
 
@@ -55,14 +55,16 @@ erogata dal processore e conseguentemente ridurre la corrente che accende il
 led. Essendo la tensione in uscita di 5 Volt, l'assorbimento in corrente è pari 
 a 0,011 Ampere (11 mA). 
 -----
-
     Se si volesse avere un margine di sicurezza maggiore si potrebbe usare una 
     resistenza da 1K Ohm, ottenendo un assorbimento inferiore, pari a 5 mA. Con 
     una conseguente riduzione di luminosità del led.
-
 -----
 
 == Il software
+
+Come possono esserci diversi modi per eseguire i collegamenti di uno schema 
+elettrico, così  possiamo scrivere il programma che lo controlla in altrettanti 
+modi differenti.
 
 [NOTE]
     Ci sono due modi per illustrare il software. Sbattere sulla pagina un 

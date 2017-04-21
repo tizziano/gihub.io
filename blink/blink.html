@@ -6,17 +6,17 @@
 <meta name="generator" content="AsciiDoc 8.6.9" />
 <title>Blink</title>
 <style type="text/css">
-
-/* Shared CSS for AsciiDoc xhtml11 and html5 backends */
-
-/* tiz.css */
 /*
+ * tiz.css
+ *
+ * Copyright 2017 tiziano <tiziano.detogni@gmail.com>
+ *
+ * CSS for AsciiDoc xhtml11 and html5 backends
+ *
  * Modifiche mie personali:
  * carattere codice e spaziatura singola + piccolo
  * testo enfatizzato di un colore diverso dai collegamenti
 */
-
-
 
 /*  prove tiziano
  * ========================================
@@ -26,19 +26,19 @@
 /*
    role="floatright"
 */
-div.sidebarblock.floatright {
+div.floatright {
     clear:right;
     float:right;
-    padding:1em;
+    margin:1em;
 }
 
 /*
    role="floatleft"
 */
-div.sidebarblock.floatright {
-    clear:right;
-    float:right;
-    padding:1em;
+div.floatleft {
+    clear:left;
+    float:left;
+    margin:1em;
 }
 
 
@@ -181,9 +181,11 @@ div.sidebarblock.toc3 > div.content {
 
 
 
+/*
 body {
   font-family: Georgia,serif;
 }
+*/
 
 
 /* Title font. */
@@ -205,37 +207,27 @@ a {
   text-decoration: underline;
 }
 
-/*
-a:visited {
-  font-style: italic;       /*tiz*/
-  color: orange;
-                            /*tiz*/
-}
-*/
-
-
 em {
   font-style: italic;
-  color: darkgoldenrod;     /*tiz*/
+  color: darkgoldenrod;
 }
 
 strong {
   font-weight: bold;
   color: black;
-                            /*tiz*/
 }
 
-h1 {                        /*tiz*/
+h1 {
   color: #527bbd;
-  margin-top: 1.2em;       /*tiz*/
+  margin-top: 1.2em;
   margin-bottom: 0.5em;
   line-height: 1.3;
 }
 
-h2, h3, h4, h5, h6 {        /*tiz*/
+h2, h3, h4, h5, h6 {
   color: #527bbd;
-  margin-top: 0em;       /*tiz*/
-  padding-top: 1.5em;         /*tiz*/
+  margin-top: 0em;
+  padding-top: 1.5em;
   margin-bottom: 0.5em;
   line-height: 1.3;
 }
@@ -275,8 +267,7 @@ ul > li > * { color: black; }
 
 .monospaced, code, pre {
   font-family: "Courier New", Courier, monospace;
-#  font-size: inherit;
-  font-size: 0.8em;             /*tiz*/
+  font-size: 0.8em;
   color: navy;
   padding: 0;
   margin: 0;
@@ -964,7 +955,7 @@ asciidoc.install(5);
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
-<div class="sidebarblock navbar">
+<div class="sidebarblock" id="navbar">
 <div class="content">
 <svg aria-hidden="true" class="octicon octicon-mark-github" style="float:left;padding-right:10px;" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" fill-rule="evenodd"></path></svg>
 <div class="paragraph"><p><a href="../index.html">Tizziano</a></p></div>
@@ -998,7 +989,7 @@ piedipagina in una pagina HTML, possono evere un senso?</em>) Sorgente di corren
 la corrente esce dal pin. Contrapposto alla configurazione <em>Current sink</em>,
 Assorbimento di corrente, dove la corrente entra nel pin]<br /></span>.</p></div>
 <div class="paragraph"><p><span class="image">
-<img src="files/blink-crop.png" alt="Lo schema" height="300" />
+<img src="files/blink-crop.png" alt="Lo schema" />
 </span></p></div>
 <div class="paragraph"><p>Scarica: <a href="files/blink.png"><strong>immagine</strong></a>  <a href="files/blink.pdf"><strong>pdf</strong></a></p></div>
 <div class="paragraph"><p>La resistenza di 470 Ohm svolge una doppia funzione. Limitare la corrente
@@ -1016,6 +1007,9 @@ a 0,011 Ampere (11 mA).</p></div>
 <div class="sect1">
 <h2 id="_il_software">Il software</h2>
 <div class="sectionbody">
+<div class="paragraph"><p>Come possono esserci diversi modi per eseguire i collegamenti di uno schema
+elettrico, così  possiamo scrivere il programma che lo controlla in altrettanti
+modi differenti.</p></div>
 <div class="admonitionblock">
 <table><tr>
 <td class="icon">
@@ -1110,7 +1104,7 @@ todo
 <div id="footer">
 <div id="footer-text">
 Last updated
- 2017-03-08 20:13:30 CET
+ 2017-03-31 15:34:38 CEST
 </div>
 </div>
 </body>
