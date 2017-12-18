@@ -10,3 +10,21 @@ link:https://github.com/tizziano[tizziano su GitHub]
 link:mastroPiano[mastroPiano]
 link:blink/blink.html[Blink...]
 ********
+
+//
+//  barra laterate/toc
+//
+[[subcontent]]
+*****
+toc::[]
+
+'''
+
+//link:{base}index.html[home]
+
+//link:{base}index1/index1.html[home1]
+
+base: {base}
+
+*****
+

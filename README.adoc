@@ -3,14 +3,14 @@
 :author: Tiziano
 v1.0, 05-feb-2017
 
-Questo è l'archivio strutturato che ospita le pagine del sito statico per il 
-profilo di tizziano, su GitHub. La pagina principale è accessibile 
-all'indirizzo: https://tizziano.github.io. 
+Questo è l'archivio strutturato (ovvero gestito) che ospita le pagine del sito 
+statico per il profilo di tizziano, su GitHub. La pagina principale è 
+accessibile all'indirizzo: https://tizziano.github.io. 
 
 Sono presenti i file sorgenti .adoc, necessari per compilare le pagine HTML per 
-mezzo del _package python Asciidoc_ (mancano eventualmente i file di 
-configurazione e accessori che attualmente si trovano in un'altra posizione, 
-non tracciata da git). 
+mezzo del _package python Asciidoc_ (indipendentemente dai file di 
+configurazione e accessori che potrebbero trovarsi in altre posizioni non 
+tracciate da git) e il file make utilizzato per la compilazione delle pagine. 
 
 Non c'è nulla di particolarmente sofisticato, semplicemente uno spazio per 
 mostrare cosa sto facendo, come e perché. 

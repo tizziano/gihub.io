@@ -1,0 +1,31 @@
+v 20130925 2
+C 40000 40000 0 0 0 title-bordered-A4-it.sym
+C 40800 41700 1 0 0 arduino-1.sym
+{
+T 42900 47295 5 10 1 1 0 0 1
+refdes=U?
+T 40800 41695 5 10 0 1 0 0 1
+footprint=ARDUINO_UNO
+T 40800 41695 5 10 0 1 0 0 1
+device=ARDUINO_UNO
+}
+C 46100 43200 1 270 0 led-2.sym
+{
+T 45700 42700 5 10 1 1 0 0 1
+refdes=D1
+T 46700 43100 5 10 0 0 270 0 1
+device=LED
+}
+C 46300 43200 1 90 0 resistor-1.sym
+{
+T 45900 43500 5 10 0 0 90 0 1
+device=RESISTOR
+T 46000 43700 5 10 1 1 180 0 1
+refdes=470R
+}
+C 46000 42000 1 0 0 ground.sym
+N 44500 44100 46200 44100 4
+T 44700 41000 9 10 1 0 0 0 1
+Blink: Lampeggio di un led con la Scheda Arduino UnoR3
+N 44500 44100 44500 42700 4
+N 44500 42700 43300 42700 4

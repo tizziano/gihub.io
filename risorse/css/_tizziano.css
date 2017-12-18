@@ -1,9 +1,9 @@
 /*
- * tiziano.css
+ * tiz.css
  * 
  * Copyright 2017 tiziano <tiziano.detogni@gmail.com>
  * 
- * override CSS for AsciiDoc xhtml11 and html5 backends
+ * CSS for AsciiDoc xhtml11 and html5 backends
  *
  * Modifiche mie personali:
  * carattere codice e spaziatura singola + piccolo
@@ -16,89 +16,37 @@
 
 
 /*
-   role="floatright/left"
+   role="floatright"
 */
-.clearfix {
-    overflow: auto;
-/*
-    border: solid 1px;
-*/
-}
-
-/*
-.clearfix p {
-    margin-left: 1em;
-    margin-right: 1em;
-}
-*/
-
 div.floatright {
-/*
     clear:right; 
-*/
     float:right; 
-    margin-left:1em;
-    margin-top:0;
+    margin:1em;
 }
 
+/*
+   role="floatleft"
+*/
 div.floatleft {
-/*
     clear:left; 
-*/
     float:left; 
-    margin-right:1em;
-    margin-top:0;
-}
-/*
-   role="2colonne"
-*/
-.colonne2 {
-/*
-  padding: 1em;
-*/
-  -moz-column-count: 2;
-  -moz-column-gap: 1em;
-  -webkit-column-count: 2;
-  -webkit-column-gap: 1em;
-  column-count: 2;
-  column-gap: 1em;
+    margin:1em;
 }
 
-.colonne2 p {
-    margin-top:0;
-}
-
-div.colonne2 > div.content > div.listingblock {
-    -webkit-column-break-inside: avoid;
-    page-break-inside: avoid;           /* Theoretically FF 20+ */
-    break-inside: avoid;                /* IE 11 */
-
-//~     display: inline-block;
-//~     display:table;                      /* Actually FF 20+ */
-    border: solid 1px;
-    font-size: smaller;
-}
 
 /*
    #navbar
 */
-:target::before {
-  content:"";
-  display:block;
-  height:1.8em; /* fixed header height*/
-}
-
 h1 {
-  margin-top: 0.5em;
+  margin-top: 1.2em;
   margin-bottom: 0.5em;
 }
 
 h2, h3, h4, h5, h6 {
-  margin-top: 0em;
-  padding-top: 1em;
+  margin-top: 1.2em;
+  padding-top: 1.8em;
   margin-bottom: 0.5em;
 }
-
 #header {
     padding-top: 1em;
 }
@@ -107,6 +55,7 @@ h2, h3, h4, h5, h6 {
   body.manpage div#toc { display: none; }
   div#navbar   { display: none; }
 }
+
 
 #navbar  {
     position: fixed;
@@ -124,6 +73,7 @@ h2, h3, h4, h5, h6 {
   margin-top: 1em;
 }
 
+
 #navbar > div.content > div.paragraph > p > a {
     padding: 0.5em;
     text-decoration: none;
@@ -135,13 +85,16 @@ h2, h3, h4, h5, h6 {
     padding-left: 1em;
 }
 
+
+
 /*
-   .navbar  (role="navbar")
+   role="navbar"
 */
 @media print {
   body.manpage div#toc { display: none; }
   div.sidebarblock.navbar   { display: none; }
 }
+
 
 div.sidebarblock.navbar  {
     position: fixed;
@@ -178,7 +131,7 @@ div.sidebarblock.navbar > div.content > div.paragraph > p > a:hover {
 }
 
 /*
-   .toc3 (role="toc3") toc3???
+   role="toc3"
 */
 div.listingblock.toc3:hover before {
     content: "asciidoc";
@@ -213,40 +166,6 @@ div.sidebarblock.toc3 > div.content {
   padding: 0.5em;
   background-color: white;
 }
-/*
-
-    barra laterale/toc
-
-*/
-body {
-    max-width: 50em;
-    margin-left: 16em;
-}
-div.sidebarblock > div.content {
-#  background: none;
-  border: none;
-  border-left: none;
-  padding: 0.5em;
-  background-color: white;
-}
-#subcontent {
-    position: fixed;
-    top: 3em;
-    left: 0;
-    bottom: 0;
-    width: 13em;
-    padding: 0.5em;
-    padding-bottom: 1.5em;
-    margin: 0;
-    overflow: auto;
-    border-right: 3px solid #f8f8f8;
-    background-color: white;
-}
-#toc {
-    margin-bottom: 1em;
-}
-
-
 /* 
  * ========================================
 */
