@@ -31,7 +31,8 @@ asciidoc.install();
 <div class="paragraph"><p><span class="image">
 <img src="risorse/immagini/mark-github.svg" alt="Titolo" />
 </span>
-<a href="https://github.com/tizziano">tizziano su GitHub</a>
+<a href="./index.html">Home</a>
+
 
 <a href="mastroPiano">mastroPiano</a>
 <a href="blink/blink.html">Blink&#8230;</a></p></div>
@@ -42,9 +43,11 @@ Serve uno spazio web per esporre e illustrare quanto si è fatto, altrimenti non
 c'è comunicazione.</p></div>
 <div class="paragraph"><p>Al momento sono impegnato in un&#8217;impresa piuttosto difficile e noiosa, per
 illustrare il progetto <a href="https://tizziano.github.io/mastroPiano">mastroPiano</a>.
-Altre cose saranno disponibili col tempo, come ad esempio la pagina Blink,
-oppure altre storie, che parleranno di come sia possibile ottenere una pagina
-HTML (oppure un intero sito) da uno o più file di testo e come utilizzare certi
+Altre cose saranno disponibili col tempo, come ad esempio la pagina Blink, che
+si propone di spiegare alcuni concetti di programmazione complessi partento dal
+classico esempio, in apparenza banale, per accendere e spegnere un LED. Oppure
+altre storie, che parleranno di come sia possibile ottenere una pagina HTML
+(oppure un intero sito) da uno o più file di testo e come utilizzare certi
 strumenti software per semplificare, anziché complicare la propria vita e il
 proprio lavoro.</p></div>
 </div>
@@ -64,20 +67,29 @@ qualcosa che mi permetta di produrre pagine HTML, come questa.</p></div>
 <div class="sect1">
 <h2 id="_github">GitHub</h2>
 <div class="sectionbody">
-<div class="paragraph"><p>Dal momento che una parte del materiale sarebbe codice sorgente, la scelta di
-un deposito di file gestito da Git soddisferebbe anche altre necessità per il
-mantenimento del codice, soprattutto per gli sviluppi successivi.</p></div>
+<div class="paragraph"><p>Dal momento che gran parte del materiale sarebbe in forma di codice sorgente,
+la scelta di un archivio strutturato gestito da Git soddisferebbe anche altre
+necessità per il mantenimento del codice, soprattutto per gli sviluppi
+successivi.</p></div>
 <div class="paragraph"><p>Tuttavia, Git così da solo, non mi permette di pubblicare e rendere disponibile
-il codice sull&#8217;Internet. Per questo c'è GitHub, che incidentalmente comprende
+il codice su Internet. Per questo c'è GitHub, che incidentalmente comprende
 alcune funzionalità per gestire anche la documentazione. Tra queste, quella che
 più mi interesserebbe è <em>GitHub Pages</em>, che consente la pubblicazione di
-pagine web all&#8217;interno del deposito gestendone allo stesso modo anche i file
-sorgenti.</p></div>
+pagine web all&#8217;interno dell&#8217;archivio gestendo allo stesso modo anche i file
+sorgenti delle pagine.</p></div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_spazio_web_statico_o_dinamico">Spazio web statico o dinamico</h2>
 <div class="sectionbody">
+<div class="paragraph"><p>Quando ho aperto il mio profilo su GitHub e ho iniziato cercare di capire coe
+funziona e che cosa ci si può fare, ho iniziato a considerare l&#8217;opportunità di
+usa asccidoc come linguaggio di marcatura per la documentazione.</p></div>
+<div class="paragraph"><p>Dopo un po' di tempo mi sono reso conto di alcuni dettagli che mi avrebbero
+permesso di creare non una sola pagina, ma più di una con un solo comando. In
+sostanza stavo iniziando ad usare asciidoc come un generatore di siti statici.</p></div>
+<div class="paragraph"><p>Alla base di questo passaggio sta un file make che controlla da solo lo stato
+delle varie pagine ed esegue la compilazione quando è necessario.</p></div>
 </div>
 </div>
 </div>
@@ -86,7 +98,7 @@ sorgenti.</p></div>
 <div id="footer-text">
 Version 1.3<br />
 Last updated
- 2017-05-08 16:43:37 CEST
+ 2017-05-24 10:50:53 CEST
 </div>
 </div>
 </body>
